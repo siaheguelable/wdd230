@@ -1,0 +1,9 @@
+.parent {
+    display: grid;
+    grid-template-columns: minmax(150px, 25%)1fr;
+}
+
+.parent div {
+    background-color: aqua;
+    margin: 5px;
+}
