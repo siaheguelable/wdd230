@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.card {
+    border: 1px solid black;
+    margin: 5px;
+
+}
+
+h2 {
+    background-color: aqua;
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+}
+
+main h1 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    background-color: aqua;
+}
+
+header {
+    text-align: center;
+    background-color: aqua;
+
+}
+
+
+
+
+nav a:hover {
+    background-color: brown;
+    color: black;
+    display: block;
+
+}
+
+section li {
+    padding-left: 20px;
+}
+
+section li {
+    padding: 10px;
+    margin: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+img {
+    box-shadow: 1px 1px 10px black;
+    width: 80px;
+    height: 100px
+}

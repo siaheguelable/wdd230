@@ -1,0 +1,29 @@
+/* Grid layout for sections */
+@media only screen and (min-width: 38rem) {
+    .sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+        box-shadow: 1px 1px 10px black;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        /* Ensure horizontal alignment */
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: inline-block;
+    }
+}
