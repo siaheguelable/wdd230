@@ -1,0 +1,30 @@
+header {
+    text-align: center;
+    background-color: #8bb4e5;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+section {
+    margin-left: 50px;
+}
+
+.blue {
+    background-color: #8bb4e5;
+}
+
+.red {
+    background-color: #DE3771;
+}
+
+.font {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
