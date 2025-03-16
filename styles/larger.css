@@ -1,5 +1,25 @@
 /* Grid layout for sections */
 @media only screen and (min-width: 38rem) {
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+
+    }
+
     .sections {
         display: grid;
         grid-template-columns: 2fr 1fr;
