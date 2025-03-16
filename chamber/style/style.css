@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
@@ -68,5 +69,41 @@ navigation a:active {
 
 #menu.show::before {
     content: "X";
+
+}
+
+.make {
+    text-align: center;
+    background-color: #DE3771;
+    color: white;
+}
+
+footer {
+    background-color: #DE3771;
+    color: black;
+}
+
+.event section {
+    margin: 5px;
+    background-color: #ace;
+    padding: 45px;
+    text-align: center;
+}
+
+.spotlights {
+    margin: 15px;
+    background-color: #ace;
+    padding: 45px;
+    margin: 15px;
+}
+
+button {
+    z-index: -1;
+    padding: 15px;
+    background-color: #DE3771;
+    color: white;
+
+    border-radius: 0.8%;
+
 
 }

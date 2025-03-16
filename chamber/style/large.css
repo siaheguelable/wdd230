@@ -1,0 +1,92 @@
+@media only screen and (min-width: 40em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+
+    }
+
+    .event {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+
+
+    }
+
+    .spotlights {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 15px;
+        background-color: #ace;
+        padding: 45px;
+        text-align: center;
+
+
+    }
+
+    .make {
+        text-align: center;
+        background-color: #DE3771;
+        color: white;
+    }
+
+    .event section {
+        margin: 5px;
+        background-color: #ace;
+        padding: 45px;
+        text-align: center;
+    }
+
+
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #DE3771;
+        color: black;
+    }
+
+    .map {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        color: black;
+
+    }
+
+    .map img {
+        margin-left: 60px;
+        height: 100px;
+    }
+
+    .map p {
+        margin-right: 40px;
+    }
+
+    button {
+        z-index: -1;
+        padding: 15px;
+        background-color: #DE3771;
+        color: white;
+        margin-left: 200px;
+        border-radius: 0.8%;
+
+
+    }
+
+    .hero img {
+        width: 100%;
+    }
+}
