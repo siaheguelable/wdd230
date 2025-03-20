@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
+body {
+    background-color: gainsboro;
+}
 
 
 
@@ -20,7 +24,7 @@ nav a {
 }
 
 h2 {
-    background-color: aqua;
+    background-color: #DE3771;
     text-align: center;
 }
 
@@ -35,12 +39,12 @@ main h1 {
 
 footer p {
     text-align: center;
-    background-color: aqua;
+    background-color: #DE3771;
 }
 
 header {
     text-align: center;
-    background-color: aqua;
+    background-color: #DE3771;
 
 }
 
@@ -65,7 +69,7 @@ section li {
     text-decoration: none;
 }
 
-img {
+.imgg {
     box-shadow: 1px 1px 10px black;
     width: 80px;
     height: 100px
@@ -131,4 +135,15 @@ navigation a:active {
 #menu.show::before {
     content: "X";
 
+}
+
+.templeLebel {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+
+iframe {
+    width: 70%;
+    margin-left: 200px;
 }
