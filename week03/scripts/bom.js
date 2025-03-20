@@ -2,6 +2,10 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
+let chaptersArrays = getChapterList() || [];
+
+
+
 button.addEventListener('click', () => {
     if (input.value !== '') {
         const li = document.createElement('li');
@@ -28,5 +32,23 @@ button.addEventListener('click', () => {
     else {
         input.focus();
     }
+
+
+
+    chaptersArrays.forEach(chapter => {
+        displayList(chapter);
+    });
+
+    button.addEventListener('click', () => {
+        if (input.value !== '') {
+            displayList(input.value);
+            chaptersArrays.push(input.value);
+            setChapterList();
+            input.value = '';
+            input.focus();
+        }
+
+
+    });
 
 });
