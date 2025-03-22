@@ -51,4 +51,31 @@
         padding: 10px 15px;
         display: inline-block;
     }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .hover:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    .descrption {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    iframe {
+        margin-left: 100px;
+    }
+
+    .container {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+
+
 }
