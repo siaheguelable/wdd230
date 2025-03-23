@@ -26,6 +26,7 @@ nav a {
 h2 {
     background-color: #DE3771;
     text-align: center;
+    padding: 20px;
 }
 
 nav {
@@ -45,6 +46,7 @@ footer p {
 header {
     text-align: center;
     background-color: #DE3771;
+    padding: 20px;
 
 }
 
@@ -151,5 +153,20 @@ navigation a:active {
 
 iframe {
     width: 70%;
-    margin-left: 200px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    height: 300px;
+
+}
+
+.descrption p {
+    margin: 10px;
+    padding: 20px;
+}
+
+.gallery section {
+
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+
 }
