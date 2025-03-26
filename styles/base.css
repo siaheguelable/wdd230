@@ -157,6 +157,14 @@ iframe {
     margin-bottom: 20px;
     height: 300px;
 
+    border: none;
+
+
+}
+
+.calendar-frame {
+    border: none;
+    overflow: hidden;
 }
 
 .descrption p {
