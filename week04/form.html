@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Homepage</title>
+    <meta name="description" content="HOME PAGE">
+    <meta name="author" content="SIAHE GUELABLE CURTIS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../chamber/style/style.css">
+    <link rel="stylesheet" href="../chamber/style/large.css">
+    <link rel="stylesheet" href="style/form.css">
+
+
+    <link rel="icon" type="image/png"
+        href="https://raw.githubusercontent.com/siaheguelable/wdd230/refs/heads/main/PROJECT/image/emplacement.png">
+    <meta property="og:title" content="My Portfolio">
+    <meta property="og:description" content="Check out my website!">
+    <meta property="og:image" content="https://yourwebsite.com/your-image.jpg">
+    <meta property="og:url" content="https://github.com/siaheguelable/wdd230">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="make">Cote D'Ivoire chamber of commerce</h1>
+    </header>
+
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://siaheguelable.github.io/wdd230/chamber/discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="week04/record.html" class="review">
+            <fieldset>
+                <legend>Log In</legend>
+                <label>Username*<input type="text" name="name" required></label>
+                <label>Password*<input type="password" name="password" required></label>
+
+
+                <label>Email*<input type="email" name="email" required placeholder="someone@byui.edu$"
+                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+
+                <div id="rangevalue">0</div>
+                <label>Ranting* <input type="range" id="r" name="r" min="1" max="10" value="0" step="1"
+                        list="rangevalues"></label>
+                <datalist id="rangevalues">
+
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+
+                <input type="submit" value="Log In">
+                <input type="submit" value="Create an Account">
+
+
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <div class="map">
+                    <img src="image/carte-villes-cote-ivoire.jpg" alt="cote divoire map">
+                    <div>
+                        <p> Cote D'Ivoire chamber of commerce</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div>
+                <p>address:</p>
+            </div>
+
+
+        </div>
+    </footer>
+
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/form.js"></script>
+
+</body>
+
+
+
+
+</html>

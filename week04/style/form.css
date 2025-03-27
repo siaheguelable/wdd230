@@ -1,0 +1,65 @@
+:root {
+    --confirmation: rgb(74, 88, 74);
+    --textcolor: white;
+    --reqired: red;
+    --acceptedIntries: green;
+    --padding: 1rem;
+    --maxwidth: 400px;
+    --width: 100%;
+    --marginleft: 550px;
+    --margintop: 200px;
+
+}
+
+.review label {
+    display: block;
+    padding: var(--padding);
+
+
+}
+
+.review input[type="text"],
+.review input[type="email"],
+.review input[type="password"],
+.review input[type="submit"] {
+    padding: var(--padding);
+    max-width: var(--maxwidth);
+    width: var(--width);
+    margin-left: 10px;
+}
+
+fieldset {
+    width: 40%;
+    margin-left: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 4px gray;
+}
+
+.review input[type="email"] {
+    margin-left: 35px;
+}
+
+
+
+.review input[type="submit"] {
+    margin-bottom: 10px;
+    margin-left: 60px;
+    border: none;
+
+    background-color: #ace;
+}
+
+.review input[type="submit"]:hover {
+    background-color: #DE3771;
+
+
+}
+
+.review input:required {
+    border-bottom: solid 8px red;
+}
+
+.review input:required:valid {
+    border-bottom: solid 8px green;
+}

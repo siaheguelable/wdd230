@@ -1,4 +1,30 @@
+:root {
+    --bord: 1px solid #777;
+    --marginleft: 550px;
+    --margintop: 200px;
+    --padding: 30px;
+}
+
 table {
-    text-align: center;
-    margin-left: 500px;
+    border: var(--bord);
+    margin-left: var(--marginleft);
+    margin-top: var(--margintop);
+    padding: var(--padding);
+}
+
+th,
+td {
+    border-left: var(--bord);
+    border-right: var(--bord);
+    border-top: var(--bord);
+    border-bottom: var(--bord);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:first-child {
+    background-color: black;
+    color: white;
 }
