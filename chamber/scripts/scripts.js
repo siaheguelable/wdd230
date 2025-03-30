@@ -6,3 +6,8 @@ hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('show');
     hambutton.classList.toggle('show');
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("form-timestamp").value = new Date().toISOString();
+});
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Homepage</title>
+    <meta name="description" content="membership application form for the Cote D'Ivoire chamber of commerce.">
+    <meta name="author" content="SIAHE GUELABLE CURTIS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/large.css">
+
+
+    <link rel="icon" type="image/png"
+        href="https://raw.githubusercontent.com/siaheguelable/wdd230/refs/heads/main/PROJECT/image/emplacement.png">
+    <meta property="og:title" content="My Portfolio">
+    <meta property="og:description" content="Check out my website!">
+    <meta property="og:image" content="https://yourwebsite.com/your-image.jpg">
+    <meta property="og:url" content="https://github.com/siaheguelable/wdd230">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="make">Cote D'Ivoire chamber of commerce</h1>
+    </header>
+
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="https://siaheguelable.github.io/wdd230/chamber/discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+
+        </ul>
+    </nav>
+    <main class="main">
+        <form class="membership" method="get" action="thankyou.html">
+            <fieldset class="one2">
+                <legend>
+                    <h1>membership application form</h1>
+                </legend>
+                <label>
+                    First name*<input type="text" id="fname" name="name" required placeholder="Enter your First name">
+                </label>
+                <label>
+                    <span>Last name*</span>
+                    <input type="text" name="name" required placeholder="Enter your  Last name">
+                </label>
+                <label>
+                    <span> Position</span>
+                    <input type="text" name="name" pattern="[A-Za-z\s-]{7,}" placeholder="Enter your Position here"
+                        required>
+                </label>
+
+                <label>
+                    <span>Email address*</span>
+                    <input type="email" name="email" required placeholder="someone@gmail.com">
+
+                </label>
+                <label>
+                    <span>Phone number*</span>
+                    <input type="tel" name="name" required placeholder="Enter your Phone number">
+                </label>
+                <label>
+                    <span>Company name*</span>
+                    <input type="text" name="name" id="company" required placeholder="Enter your Company name">
+                </label>
+                <label>
+                    <span>membership level*</span>
+                    <select name="membership" required>
+                        <option value="">SElECT LEVEL</option>
+                        <option value="NP">NP Membership is for non profit organizations and there is no fee.</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Memorganization's descriptionbership</option>
+                    </select>
+
+                </label>
+                <label>organization's description*</label>
+                <textarea class="message" name="message" rows="5" cols="50"
+                    placeholder="organization's description"></textarea>
+
+                <input type="hidden" name="formTimestamp" id="form-timestamp">
+
+
+
+
+                <input type="submit" class="button" value="Apply Now">
+
+
+            </fieldset>
+
+            <fieldset class="one1">
+
+                <h1>Membership Benefits</h1>
+
+                <div>
+
+
+                    <h3>Basic Membership</h3>
+
+                    <p> ✔ Access to community events</p>
+                    <p> ✔ Monthly newsletter</p>
+                </div>
+
+                <div>
+
+
+                    <h3>Premium Membership</h3>
+
+                    <p> ✔All Basic benefits</p>
+                    <p> ✔ Discount on events</p>
+                    <p> ✔ Access to special training</p>
+                </div>
+
+                <div>
+
+
+                    <h3>VIP Membership</h3>
+
+                    <p> ✔ All Premium benefits</p>
+                    <p> ✔ Featured spotlight on homepage</p>
+                    <p> ✔ Free advertising</p>
+                    <p> ✔ Exclusive VIP events</p>
+
+
+                </div>
+            </fieldset>
+        </form>
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+
+            <div class="map">
+                <img src="image/carte-villes-cote-ivoire.jpg" alt="cote divoire map">
+
+                <p> Cote D'Ivoire chamber of commerce</p>
+
+            </div>
+
+
+            <p>address:</p>
+
+        </div>
+    </footer>
+
+
+    <script src="scripts/scripts.js"></script>
+
+</body>
+
+
+
+
+</html>
