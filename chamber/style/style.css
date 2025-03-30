@@ -116,3 +116,96 @@ button {
     margin-left: 60px;
     height: 100px;
 }
+
+.membership label {
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: .9rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.membership input[type="text"],
+.membership input[type="email"],
+.membership input[type="tel"],
+
+.membership select,
+.message {
+    background-color: gainsboro;
+    display: block;
+    border: solid 1px gray;
+    border-radius: 6px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-left: 10px;
+}
+
+.membership {
+    margin-left: 10px;
+}
+
+.membership select {
+    margin-bottom: 30px;
+}
+
+.membership label input[type="submit"] {
+    width: 400px;
+}
+
+
+
+.button {
+    background-color: #9c2c13;
+    display: block;
+    border: solid 1px gray;
+    border-radius: 6px;
+    padding: .75rem;
+    color: WHITE;
+    width: 100%;
+    max-width: 200px;
+    appearance: none;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.button:hover {
+    background-color: #ace;
+    color: black;
+    /* Ensure text remains readable */
+    cursor: pointer;
+    /* Improves UX */
+    transition: background-color 0.3s ease-in-out;
+    /* Smooth effect */
+}
+
+.membership input:required {
+    border-bottom: solid 8px red;
+}
+
+.membership input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+.one1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: gainsboro;
+}
+
+.one1 div {
+    border: 1px solid black;
+    margin-top: 8px;
+    background-color: white;
+    text-align: left;
+
+}
+
+.message {
+    background-color: white;
+}
