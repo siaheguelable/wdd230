@@ -2,3 +2,7 @@
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 https://wesbos.com/javascript
+
+CSS pseudo element
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements

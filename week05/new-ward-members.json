@@ -1,0 +1,18 @@
+{
+    "familyName": "Siahe",
+    "dateMoved": "2011",
+    "numberMembers": 2,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Fiacre",
+            "gender": "Male",
+            "birthDay": "1990-04-07"
+        },
+        {
+            "name": "Solange",
+            "gender": "female",
+            "birthDay": "1985-02-08"
+        }
+    ]
+}

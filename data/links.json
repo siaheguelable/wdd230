@@ -1,0 +1,49 @@
+{
+    "weeks": [
+        {
+            "week": "week 1",
+            "link": [
+                {
+                    "url": "https://example.com/week1/resource1",
+                    "title": "Week 1 Resource 1"
+                }
+            ]
+        },
+        {
+            "week": "week 2",
+            "link": [
+                {
+                    "url": "https://example.com/week2/resource1",
+                    "title": "Week 2 Resource 1"
+                }
+            ]
+        },
+        {
+            "week": "week 3",
+            "link": [
+                {
+                    "url": "https://example.com/week3/resource1",
+                    "title": "Week 3 Resource 1"
+                }
+            ]
+        },
+        {
+            "week": "week 4",
+            "link": [
+                {
+                    "url": "https://example.com/week4/resource1",
+                    "title": "Week 4 Resource 1"
+                }
+            ]
+        },
+        {
+            "week": "week 5",
+            "link": [
+                {
+                    "url": "https://example.com/week5/resource1",
+                    "title": "Week 5 Resource 1"
+                }
+            ]
+        }
+    ]
+}

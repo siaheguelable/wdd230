@@ -178,3 +178,12 @@ iframe {
     margin-right: 20px;
 
 }
+
+
+/*------CSS for the weather section------*/
+section .weather {
+    margin-left: 150px;
+    font-size: larger;
+    margin-top: 60px;
+
+}
