@@ -5,7 +5,7 @@
             "link": [
                 {
                     "url": "https://byui-cse.github.io/wdd230-ww-course/week01/",
-                    "title": "Week 1 Resource 1"
+                    "title": "Resource "
                 }
             ]
         },
@@ -13,8 +13,8 @@
             "week": "week 2",
             "link": [
                 {
-                    "url": "https://example.com/week2/resource1",
-                    "title": "Week 2 Resource 1"
+                    "url": "https://byui-cse.github.io/wdd230-ww-course/week02/",
+                    "title": " Resource "
                 }
             ]
         },
@@ -22,8 +22,8 @@
             "week": "week 3",
             "link": [
                 {
-                    "url": "https://example.com/week3/resource1",
-                    "title": "Week 3 Resource 1"
+                    "url": "https://byui-cse.github.io/wdd230-ww-course/week03/",
+                    "title": "Resource "
                 }
             ]
         },
@@ -31,8 +31,8 @@
             "week": "week 4",
             "link": [
                 {
-                    "url": "https://example.com/week4/resource1",
-                    "title": "Week 4 Resource 1"
+                    "url": "https://byui-cse.github.io/wdd230-ww-course/week04/",
+                    "title": " Resource "
                 }
             ]
         },
@@ -40,8 +40,8 @@
             "week": "week 5",
             "link": [
                 {
-                    "url": "https://example.com/week5/resource1",
-                    "title": "Week 5 Resource 1"
+                    "url": "https://byui-cse.github.io/wdd230-ww-course/week05/",
+                    "title": "Resource "
                 }
             ]
         }

@@ -1,4 +1,6 @@
-const linkURL = "https://siaheguelable.github.io/wdd230/data/links.json";
+const href = document.querySelector('a');
+
+const linkURL = "https://siaheguelable.github.io/wdd230/data/links.json"; // Your JSON file URL
 
 async function getLink() {
     try {
@@ -7,39 +9,24 @@ async function getLink() {
 
         const data = await response.json();
         console.log(data);
-        displayLink(data);
+        displayLink(data.weeks); // Accessing the 'weeks' array
     } catch (error) {
         console.error("Error fetching links:", error);
     }
 }
 
 const displayLink = (weeks) => {
-    const section = document.querySelector(".sections"); // Ensure this exists in your HTML
+    const listItems = document.querySelectorAll(".sections ul li"); // Select all existing <li> elements
 
-    weeks.forEach(week => {
-        const weekCard = document.createElement("section");
-        weekCard.classList.add("card");
+    weeks.forEach((week, index) => {
+        if (listItems[index]) { // Ensure there's a matching <li> element
+            const anchor = listItems[index].querySelector("a"); // Find the <a> tag inside <li>
 
-        // Add the week title
-        const title = document.createElement("h2");
-        title.textContent = week.week;
-
-        // Create the list
-        const ul = document.createElement("ul");
-
-        week.links.forEach(link => {
-            const li = document.createElement("li");
-            const a = document.createElement("a");
-            a.textContent = link.name;
-            a.href = link.url;
-            li.appendChild(a);
-            ul.appendChild(li);
-        });
-
-        // Append to the section
-        weekCard.appendChild(title);
-        weekCard.appendChild(ul);
-        section.appendChild(weekCard);
+            if (anchor && week.link.length > 0) {
+                anchor.href = week.link[0].url; // Set the actual link
+                anchor.innerHTML = `<span>${week.link[0].title}</span>`; // Wrap the text inside <span>
+            }
+        }
     });
 }
 
