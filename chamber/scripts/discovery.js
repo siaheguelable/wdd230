@@ -1,41 +1,55 @@
-// Get last visit from localStorage or use the current time if not found
-let lastVisit = new Date(window.localStorage.getItem("lastVisit")) || new Date();
-let currentVisit = new Date();
-
-// Function to check if less than a day has passed
-function isLessThanADay(lastVisit, currentVisit) {
-    let diffTime = currentVisit - new Date(lastVisit); // Ensure lastVisit is a Date object
-    let oneDay = 24 * 60 * 60 * 1000; // One day in milliseconds
-    return diffTime < oneDay;
-}
-
-// Get the number of visits from localStorage or default to 0
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-
-// Check visit conditions
-if (numVisits === 1) {
-    alert("Welcome! Let us know if you have any questions.");
-} else if (isLessThanADay(lastVisit, currentVisit)) {
-    alert("Back so soon! Awesome!");
-} else {
-    alert(`Your last visit was on: ${lastVisit.toLocaleString()}`);
-}
-
-// Update last visit and numVisits in localStorage
-window.localStorage.setItem("lastVisit", currentVisit.toISOString()); // Store as a string
-window.localStorage.setItem("numVisits-ls", numVisits + 1);
-
-
-
 const container = document.querySelector('#container');
-
-const url = "";
+const url = "https://siaheguelable.github.io/wdd230/chamber/data/members.json";
 
 async function getMyData() {
     const response = await fetch(url);
     if (response.ok) {
-        const data = response.json();
-        console.log(data);
+        const data = await response.json();
+        displayinfo(data.members);
+    } else {
+        console.error("Failed to fetch data");
     }
-
 }
+
+const displayinfo = (members) => {
+    members.forEach(member => {
+        const card = document.createElement('div');
+        card.classList.add('member-card'); // optional for styling
+
+        const icon = document.createElement('img');
+        icon.setAttribute('src', member.icon);
+        icon.setAttribute('alt', `Logo of ${member.name}`);
+        icon.setAttribute('loading', 'lazy');
+
+        const name = document.createElement('h2');
+        name.textContent = member.name;
+
+        const address = document.createElement('p');
+        address.textContent = `Address: ${member.information.addresses}`;
+
+        const phone = document.createElement('p');
+        phone.textContent = `Phone: ${member.phone
+            }`;
+
+        const email = document.createElement('p');
+        email.textContent = `Email: ${member.information.email}`;
+
+        const website = document.createElement('a');
+        website.href = member.website;
+        website.textContent = "Visit Website";
+        website.target = "_blank";
+
+        // Add everything to the card
+        card.appendChild(icon);
+        card.appendChild(name);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(email);
+        card.appendChild(website);
+
+        // Add card to container
+        container.appendChild(card);
+    });
+};
+
+getMyData();
