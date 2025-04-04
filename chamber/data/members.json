@@ -1,0 +1,64 @@
+{
+    "members": [
+        {
+            "name": "RDV des douanes",
+            "information": [
+                {
+                    "addresses": "YANGNI Colette Abidjan",
+                    "phone numbers": "27 20 30 97 41",
+                    "website URLs": "https://www.cci.ci/rdv-des-douanes/",
+                    "icon": "https://www.cci.ci/wp-content/uploads/2022/02/Globe.png",
+                    "email": ""
+                }
+            ]
+        },
+        {
+            "name": "Foires en Côte d’Ivoire",
+            "information": [
+                {
+                    "addresses": "Nancy COULIBALY, Chargée des Evénements Commerciaux",
+                    "phone numbers": "27 20 33 16 00 poste 818",
+                    "website URLs": "https://www.cci.ci/foires-en-cote-divoire/",
+                    "icon": "https://www.cci.ci/wp-content/uploads/2022/02/argent.png",
+                    "email": "nancycoulibaly@cci.ci"
+                }
+            ]
+        },
+        {
+            "name": "Foires à l’international",
+            "information": [
+                {
+                    "addresses": " Nancy COULIBALY, Chargée des Evénements Commerciaux",
+                    "phone numbers": "27 20 33 16 00 poste 818",
+                    "website URLs": "https://www.cci.ci/foires-a-linternational/",
+                    "icon": "https://www.cci.ci/wp-content/uploads/2022/02/terre.png",
+                    "email": "nancycoulibaly@cci.ci"
+                }
+            ]
+        },
+        {
+            "name": "Journée pays",
+            "information": [
+                {
+                    "addresses": "YANGNI Colette",
+                    "phone numbers": "27 20 30 97 41",
+                    "website URLs": "https://www.cci.ci/journee-pays/",
+                    "icon": "https://www.cci.ci/wp-content/uploads/2022/02/Globe.png",
+                    "email": "ycolette@cci.ci"
+                }
+            ]
+        },
+        {
+            "name": "Transmission de contacts",
+            "information": [
+                {
+                    "addresses": "YANGNI Colette",
+                    "phone numbers": "27 20 30 97 41",
+                    "website URLs": "https://www.cci.ci/transmission-de-contacts/",
+                    "icon": "https://www.cci.ci/wp-content/uploads/2022/02/Graph.png",
+                    "email": "ycolette@cci.ci"
+                }
+            ]
+        }
+    ]
+}

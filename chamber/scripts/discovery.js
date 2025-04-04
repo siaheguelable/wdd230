@@ -24,3 +24,18 @@ if (numVisits === 1) {
 // Update last visit and numVisits in localStorage
 window.localStorage.setItem("lastVisit", currentVisit.toISOString()); // Store as a string
 window.localStorage.setItem("numVisits-ls", numVisits + 1);
+
+
+
+const container = document.querySelector('#container');
+
+const url = "";
+
+async function getMyData() {
+    const response = await fetch(url);
+    if (response.ok) {
+        const data = response.json();
+        console.log(data);
+    }
+
+}
