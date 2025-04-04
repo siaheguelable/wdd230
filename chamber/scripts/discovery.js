@@ -25,7 +25,7 @@ const displayinfo = (members) => {
         name.textContent = member.name;
 
         const address = document.createElement('p');
-        address.textContent = `Address: ${member.information.addresses}`;
+        address.textContent = `Address: ${member.addresses}`;
 
         const phone = document.createElement('p');
         phone.textContent = `Phone: ${member.phone
