@@ -46,7 +46,7 @@ const displayinfo = (members) => {
 
         const website = document.createElement('a');
         website.href = member.website;
-        website.textContent = "Visit Website";
+        website.textContent = " Website";
         website.target = "_blank";
 
         // Add everything to the card
