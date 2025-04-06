@@ -1,5 +1,13 @@
-const container = document.querySelector('#container');
 const url = "https://siaheguelable.github.io/wdd230/chamber/data/members.json";
+/* this part is for grid and list in the Dom */
+
+const gridButton = document.querySelector('#grid');
+const listButton = document.querySelector('#list');
+const container = document.querySelector('#container');
+
+
+
+
 
 async function getMyData() {
     const response = await fetch(url);
@@ -12,6 +20,9 @@ async function getMyData() {
 }
 
 const displayinfo = (members) => {
+
+    container.innerHTML = ''; // Clear previous content
+
     members.forEach(member => {
         const card = document.createElement('div');
         card.classList.add('member-card'); // optional for styling
@@ -21,18 +32,17 @@ const displayinfo = (members) => {
         icon.setAttribute('alt', `Logo of ${member.name}`);
         icon.setAttribute('loading', 'lazy');
 
-        const name = document.createElement('h2');
+        const name = document.createElement('p');
         name.textContent = member.name;
 
         const address = document.createElement('p');
         address.textContent = `Address: ${member.addresses}`;
 
         const phone = document.createElement('p');
-        phone.textContent = `Phone: ${member.phone
-            }`;
+        phone.textContent = `Phone: ${member.phone}`;
 
         const email = document.createElement('p');
-        email.textContent = `Email: ${member.information.email}`;
+        email.textContent = `Email: ${member.email}`;
 
         const website = document.createElement('a');
         website.href = member.website;
@@ -52,4 +62,27 @@ const displayinfo = (members) => {
     });
 };
 
+gridButton.addEventListener("click", () => {
+    container.classList.add("grid");
+    container.classList.remove("list");
+
+    gridButton.classList.add("active");
+    listButton.classList.remove("active");
+
+
+});
+
+listButton.addEventListener("click", showList) // example using defined function
+
+function showList() {
+    container.classList.add("list");
+    container.classList.remove("grid");
+    listButton.classList.add("active");
+    gridButton.classList.remove("active");
+};
+
+
+
 getMyData();
+
+

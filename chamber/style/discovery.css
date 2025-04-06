@@ -1,4 +1,61 @@
-#container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+ #container {
+     display: grid;
+
+     background-color: gainsboro;
+     margin: 15px;
+     row-gap: 0.7px;
+ }
+
+
+ #container div {
+     margin-left: 50px;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     background-color: #11857c;
+     border-radius: 1%;
+ }
+
+ #container p,
+ a {
+     text-align: center;
+     padding: 10px;
+
+ }
+
+ #container img,
+ #container a {
+     margin-left: 250px;
+     font-size: 20px;
+     text-decoration: none;
+
+ }
+
+ /*this is the veiw of the list toogle in the mobile view or smaller screen*/
+
+ #container.list {
+     display: flex;
+     flex-direction: column;
+     background-color: gainsboro;
+     margin: 15px;
+     row-gap: 0.7px;
+     width: 600px;
+
+     margin-left: 400px;
+ }
+
+ #container.list .member-card {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #ace;
+     margin: 15px 50px;
+     border-radius: 1%;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     padding: 10px;
+     transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ #container .member-card img,
+ #container .member-card a {
+     margin-right: 250px;
+ }
