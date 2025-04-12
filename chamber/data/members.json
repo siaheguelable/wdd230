@@ -6,7 +6,7 @@
             "phone ": "27 20 30 97 41",
             "website ": "https://www.cci.ci/rdv-des-douanes/",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/Globe.png",
-            "email": ""
+            "email": "nintigale@gmail.com"
         },
         {
             "name": "Foires en Côte d’Ivoire",
@@ -54,7 +54,8 @@
             "phone": "27 20 33 16 00 (poste 781)",
             "website ": "https://www.cci.ci/3dfi/",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/stand.png",
-            "email": "ycolette@cci.ci"
+            "email": "ycolette@cci.ci",
+            "level": "silver"
         }
     ]
 }
