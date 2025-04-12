@@ -6,7 +6,8 @@
             "phone": "27 20 30 97 41",
             "website": "https://www.cci.ci/rdv-des-douanes",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/Globe.png",
-            "email": "nintigale@gmail.com"
+            "email": "nintigale@gmail.com",
+            "level": "Gold"
         },
         {
             "name": "Foires en Côte d’Ivoire",
@@ -14,7 +15,8 @@
             "phone": "27 20 33 16 00 poste 818",
             "website": "https://www.cci.ci/foires-en-cote-divoire/",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/argent.png",
-            "email": "nancycoulibaly@cci.ci"
+            "email": "nancycoulibaly@cci.ci",
+            "level": "Bronze"
         },
         {
             "name": "Foires à l’international",
@@ -22,7 +24,8 @@
             "phone": "27 20 33 16 00 poste 818",
             "website": "https://www.cci.ci/foires-a-linternational/",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/terre.png",
-            "email": "nancycoulibaly@cci.ci"
+            "email": "nancycoulibaly@cci.ci",
+            "level": "silver"
         },
         {
             "name": "Journée pays",
@@ -30,7 +33,8 @@
             "phone": "27 20 30 97 41",
             "website": "https://www.cci.ci/journee-pays/",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/Globe.png",
-            "email": "ycolette@cci.ci"
+            "email": "ycolette@cci.ci",
+            "level": "Gold"
         },
         {
             "name": "Transmission de contacts",
@@ -38,7 +42,8 @@
             "phone": "2720309741",
             "website": "https://www.cci.ci/transmission-de-contacts/",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/Graph.png",
-            "email": "ycolette@cci.ci"
+            "email": "ycolette@cci.ci",
+            "level": "silver"
         },
         {
             "name": "Point de mire",
