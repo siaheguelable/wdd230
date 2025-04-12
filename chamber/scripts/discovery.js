@@ -43,8 +43,9 @@ const displayinfo = (members) => {
 
         const email = document.createElement('p');
         email.textContent = `Email: ${member.email}`;
+
         const subsrciption = document.createElement('p');
-        subsrciption.textContent = ` Subcripttion Level: ${member.level}`;
+        subsrciption.textContent = `Subcripttion Level: ${member.level}`;
 
         const website = document.createElement('a');
         website.href = member.website;
