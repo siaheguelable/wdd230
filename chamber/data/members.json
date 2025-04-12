@@ -3,56 +3,56 @@
         {
             "name": "RDV des douanes",
             "addresses": "YANGNI Colette Abidjan",
-            "phone ": "27 20 30 97 41",
-            "website ": "https://www.cci.ci/rdv-des-douanes",
+            "phone": "27 20 30 97 41",
+            "website": "https://www.cci.ci/rdv-des-douanes",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/Globe.png",
             "email": "nintigale@gmail.com"
         },
         {
             "name": "Foires en Côte d’Ivoire",
             "addresses": "Nancy COULIBALY, Chargée des Evénements Commerciaux",
-            "phone ": "27 20 33 16 00 poste 818",
-            "website ": "https://www.cci.ci/foires-en-cote-divoire/",
+            "phone": "27 20 33 16 00 poste 818",
+            "website": "https://www.cci.ci/foires-en-cote-divoire/",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/argent.png",
             "email": "nancycoulibaly@cci.ci"
         },
         {
             "name": "Foires à l’international",
-            "addresses": " Nancy COULIBALY, Chargée des Evénements Commerciaux",
-            "phone ": "27 20 33 16 00 poste 818",
-            "website ": "https://www.cci.ci/foires-a-linternational/",
+            "addresses": "Nancy COULIBALY, Chargée des Evénements Commerciaux",
+            "phone": "27 20 33 16 00 poste 818",
+            "website": "https://www.cci.ci/foires-a-linternational/",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/terre.png",
             "email": "nancycoulibaly@cci.ci"
         },
         {
             "name": "Journée pays",
             "addresses": "YANGNI Colette",
-            "phone ": "27 20 30 97 41",
-            "website ": "https://www.cci.ci/journee-pays/",
+            "phone": "27 20 30 97 41",
+            "website": "https://www.cci.ci/journee-pays/",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/Globe.png",
             "email": "ycolette@cci.ci"
         },
         {
             "name": "Transmission de contacts",
             "addresses": "YANGNI Colette",
-            "phone ": "27 20 30 97 41",
-            "website ": "https://www.cci.ci/transmission-de-contacts/",
+            "phone": "2720309741",
+            "website": "https://www.cci.ci/transmission-de-contacts/",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/Graph.png",
             "email": "ycolette@cci.ci"
         },
         {
             "name": "Point de mire",
             "addresses": "YANGNI Colette",
-            "phone ": "27 20 30 97 41",
-            "website ": "https://www.cci.ci/point-de-mire/",
+            "phone": "26 20 33 16 00 (poste 981)",
+            "website": "https://www.cci.ci/point-de-mire/",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/Graph.png",
             "email": "ycolette@cci.ci"
         },
         {
             "name": "3DFI",
             "addresses": "Mlle. N’dri Thérèse APATA, conseiller chargée de tourisme et d’Hôtellerie",
-            "phone": "27 20 33 16 00 (poste 781)",
-            "website ": "https://www.cci.ci/3dfi/",
+            "phone": "27 20 33 16 00 ",
+            "website": "https://www.cci.ci/3dfi/",
             "icon": "https://www.cci.ci/wp-content/uploads/2022/02/stand.png",
             "email": "ycolette@cci.ci",
             "level": "silver"
