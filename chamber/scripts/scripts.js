@@ -13,27 +13,10 @@ const url = `https://pro.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lo
 // but this is to get the forecats for the next days 
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
-const jsonData = "https://siaheguelable.github.io/wdd230/chamber/data/members.json";
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const banner = document.getElementById("meetGreetBanner");
-    const closeBtn = document.getElementById("closeBanner");
 
-    // Check if today is Monday (1), Tuesday (2), or Wednesday (3)
-    const today = new Date().getDay(); // Sunday is 0
-
-    // Check if banner was previously closed in this session
-    if ((today >= 1 && today <= 3) && !sessionStorage.getItem("bannerClosed")) {
-        banner.style.display = "flex";
-    }
-
-    closeBtn.addEventListener("click", function () {
-        banner.style.display = "none";
-        sessionStorage.setItem("bannerClosed", "true");
-    });
-});
 
 
 

@@ -283,4 +283,34 @@
         margin-left: 1em;
         cursor: pointer;
     }
+
+
+    .event-banner {
+        background-color: #f9e79f;
+        padding: 1rem;
+        text-align: center;
+        position: relative;
+    }
+
+    .event-banner button {
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem;
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .spotlight-section {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+
 }
