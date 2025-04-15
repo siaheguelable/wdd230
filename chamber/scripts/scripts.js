@@ -63,16 +63,7 @@ async function getForeCats() {
 
 
 
-async function membersLevel() {
-    const response = await fetch(jsonData);
-    if (response.ok) {
-        const data = await response.json();
-        //console.log(data);
-        spotlight.id = data.level
 
-    }
-
-}
 
 // Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
 hambutton.addEventListener('click', () => {

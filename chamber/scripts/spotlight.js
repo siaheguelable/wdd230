@@ -1,43 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const membersUrl = 'https://siaheguelable.github.io/wdd230/chamber/data/members.json'; // Path to your JSON file with members data
-    const spotlightContainer = document.getElementById('spotlightContainer');
-    const meetGreetBanner = document.getElementById('meetGreetBanner');
-    const closeBannerBtn = document.getElementById('closeBanner');
+async function loadSpotlights() {
+    const response = await fetch('data/members.json');
+    const members = await response.json();
 
-    // Load and display spotlight members
-    fetch(membersUrl)
-        .then(res => res.json())
-        .then(data => {
-            const qualifiedMembers = data.members.filter(member =>
-                ['silver', 'gold'].includes(member.level.toLowerCase())
-            );
+    // Filter Silver and Gold
+    const qualified = members.filter(m => m.level === 'silver' || m.level === 'gold');
 
-            // Randomly select 2-3 qualified members
-            const selectedMembers = qualifiedMembers.sort(() => 0.5 - Math.random()).slice(0, 3);
+    // Shuffle and pick 2-3
+    const shuffled = qualified.sort(() => 0.5 - Math.random());
+    const selected = shuffled.slice(0, Math.floor(Math.random() * 2) + 2);
 
-            selectedMembers.forEach(member => {
-                const memberDiv = document.createElement('div');
-                memberDiv.classList.add('member');
-                memberDiv.innerHTML = `
-          <h3>${member.name}</h3>
-          <p>${member.description}</p>
-          <a href="${member.website}" target="_blank">Visit Website</a>
-        `;
-                spotlightContainer.appendChild(memberDiv);
-            });
-        });
+    const container = document.getElementById('spotlights');
+    container.innerHTML = '';
 
-    // Display banner on Monday, Tuesday, or Wednesday if not dismissed
-    const today = new Date().getDay(); // 0 = Sunday, 1 = Monday, ...
-    const bannerDismissed = localStorage.getItem('bannerDismissed');
-
-    if ([1, 2, 3].includes(today) && !bannerDismissed) {
-        meetGreetBanner.classList.remove('hidden');
-    }
-
-    // Close the banner when the close button is clicked
-    closeBannerBtn.addEventListener('click', () => {
-        meetGreetBanner.classList.add('hidden');
-        localStorage.setItem('bannerDismissed', 'true');
+    selected.forEach(member => {
+        const card = document.createElement('div');
+        card.className = 'spotlight-card';
+        card.innerHTML = `
+      <img src="${member.logo}" alt="${member.name} logo">
+      <h3>${member.name}</h3>
+      <p>${member.description}</p>
+      <a href="${member.website}" target="_blank">Visit Website</a>
+    `;
+        container.appendChild(card);
     });
-});
+}
+
+document.addEventListener('DOMContentLoaded', loadSpotlights);
